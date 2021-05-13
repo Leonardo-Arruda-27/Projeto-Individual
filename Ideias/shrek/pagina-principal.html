@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/klaus.png" type="image/x-icon">
+    <script src="script.js"></script>
+
+
+    <title>SHREK OGRINHOS | Site Oficial</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="container">
+
+            <img src="img/klaus.png">
+            <h1 class="titulo"><span id="inicio" class="destaque"><b href="pagina-principal.html"></b>
+                    Sherk Ogrinhos</span></h1>
+
+
+            <ul class="navbar">
+                <li><span class="destaque1"><a href="pagina-principal.html"> Home</a></span></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="cadastro.html"> Cadastro</a></li>
+                <li><a href="login.html"> Login</a></li>
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <!-- <div class="container2"> -->
+
+    <div class="imgShrekao"></div>
+
+    <!-- </div> -->
+
+    <div class="inicio">
+
+        <div class="container">
+
+
+            <h1>Quem é Shrek?!</h1>
+
+            <p>Shrek, um temido e aterrorizante ogro verde que ama a solidão em seu pântano, vê sua vida interrompida
+                quando diversas criaturas de contos de fada são exiladas para lá por ordem do maligno <b
+                    onclick="lord()" style="cursor: pointer;">Lorde Farquaad</b>.... O vencedor teria o "privilégio" de
+                resgatar Fiona para Farquaad se casar com ela.</p>
+
+            <center>
+                <img id="farquaad" src="img/Lord Farquaad.ico" style="display: none;"></img> <br>
+                <b id="lorde" style="text-transform: uppercase; display: none; color: white;">lord farquaad 👑</b>
+            </center>
+
+
+            <h1>É Possivel não amar?</h1>
+
+            <p>Impossivel. Shrek para o cego, é a luz. Para o faminto, é o pão. Para o sedento, é a fonte de água
+                viva. Para o morto, é a vida. <br>
+            <p>Apresento a vocês 5 motivos para vocês <b onclick="show()" style="cursor: pointer;">AMAR MUITO O SHREK</b>.Apreciem essa obra de arte chamada Shrek:</p>
+            </p>
+
+            <center>
+            <!-- Começo do Slide Show -->
+            <div class="slideshow-container" style="display: none;" id="Boa">
+
+                <!-- Inserindo as imagens no Slide Show -->
+                <div class="meuSlide">
+                    <div class="numeroTexto">1 / 5</div>
+                    <img src="img/slide 1.jpg" alt="shrek-sorrindo-1" style="width:500px; height: 580px;">
+                    <div class="texto">Sorriso mais lindo desse mundo 😍</div>
+                </div>
+
+                <div class="meuSlide">
+                    <div class="numeroTexto">2 / 5</div>
+                    <img src="img/shrek-familia.jpg" alt="shrek-familia" style="width:500px;height: 580px;">
+                    <div class="texto">Familia mais linda ❤️</div>
+                </div>
+
+                <div class="meuSlide">
+                    <div class="numeroTexto">3 / 5</div>
+                    <img src="img/shrek analise.jpg" style="width:500px;height: 580px;">
+                    <div class="texto">Shrek em Analise 🤔</div>
+                </div>
+        
+                <div class="meuSlide">
+                    <div class="numeroTexto">4 / 5</div>
+                    <img src="img/bolado.png" style="width:500px;height: 580px;">
+                    <div class="texto">SHREK TA BRAVO 😠</div>
+                </div>
+        
+                <div class="meuSlide">
+                    <div class="numeroTexto">5 / 5</div>
+                    <img src="img/humano.jpg" style="width:500px;height: 580px;">
+                    <div class="texto">Shrek Humano 🤠</div>
+                </div>
+        
+                <!-- Botões de Proximo e Anterior -->
+                <a class="anterior" onclick="proxSlide(-1)" style="height: 40px;">&#10094;</a>
+                <a class="proximo" onclick="proxSlide(1)">&#10095;</a>
+            </div>
+            </center>
+            <br>
+
+            <!-- Circulos/Botões -->
+        <div style="text-align:center">
+            <div class="circulo" onclick="botaoCirculo(1)"></div>
+            <div class="circulo" onclick="botaoCirculo(2)"></div>
+            <div class="circulo" onclick="botaoCirculo(3)"></div>
+            <div class="circulo" onclick="botaoCirculo(4)"></div>
+            <div class="circulo" onclick="botaoCirculo(5)"></div>
+
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
+<script>
+var slide = 1;
+showSlides(slide);
+
+// anterior/proximo controle(setas)
+function proxSlide(n){
+    showSlides(slide += n);
+}
+
+// Controles de imagem em miniatura
+function botaoCirculo(n){
+    showSlides(slide = n);
+}
+
+function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("meuSlide");
+    var circulo = document.getElementsByClassName("circulo");
+    if (n > slides.length) { slide = 1 }
+    if (n < 1) { slide = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < circulo.length; i++) {
+        circulo[i].className = circulo[i].className.replace(" active", "");
+    }
+    slides[slide - 1].style.display = "block";
+    circulo[slide - 1].className += " active";
+}
+
+</script>
