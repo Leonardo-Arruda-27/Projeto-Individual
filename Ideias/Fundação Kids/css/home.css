@@ -23,3 +23,55 @@ body{
     background-size: cover;
     height: 90vh;
 }
+
+.botoes {
+    list-style: none;
+    float: right;
+
+}
+
+
+.botoes li a{
+    text-decoration: none;
+    color: white;
+}
+
+.botoes li {
+    border: 0px;
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-left: 25px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid rgba(105, 105, 105, 0.7) 1px;
+    border-radius: 8px;
+}
+
+.botoes li:hover{
+    background-color: dimgray;
+    transition: 0.4;
+}
+
+.meio button{
+    margin-top: 450px;
+    /* float: left; */
+    border: 0px;
+    width: auto;
+    text-align: center;
+    background-color:rgba(105, 105, 105, 0.7) ;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    color: white;
+}
+
+.meio button:hover{
+    background-color: transparent;
+    transition: 0.4;
+}
