@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-image: url(../img/template.jpg);
+    background-image: url(../img/template.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -58,8 +58,9 @@ body{
 
 .meio button{
     margin-top: 450px;
-    /* float: left; */
+    margin-left: 40px;
     border: 0px;
+    margin-right: 165px;
     width: auto;
     text-align: center;
     background-color:rgba(105, 105, 105, 0.7) ;
