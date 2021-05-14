@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    background-image: url(../img/normal-pula.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 80%; 
+    margin: auto;
+}
+
+.titulo h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.botoes {
+    list-style: none;
+    float: right;
+
+}
+
+.botoes li a{
+    text-decoration: none;
+    color: white;
+}
+
+.botoes li {
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-left: 25px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid #fff9f9 1px;
+    border-radius: 8px;
+}
+
+.botoes li:hover{
+    background-color: dimgray;
+    transition: 0.4;
+}
+
+.caixa-do-login{
+    margin: 0;
+}
+
+.caixa-login1{
+    margin-top: 115px;
+    background-color: rgba(7, 6, 6, 0.344);
+    float: left;
+    margin-left: 35%;
+    width: 35%;
+    height: 360px;
+    border-radius: 15px;
+    /* box-shadow: 5px 7px 13px 5px purple; */
+}
+
+.caixa-login1 h1{
+    margin: 0;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* .caixa-login1 p{
+    margin: 0;
+    margin-top: 25px;
+    font-weight:500;
+    color: white;
+    text-transform: uppercase;
+} */
+
+.caixa-login1 input{
+    margin: 0;
+    height: 30px;
+    background-color: transparent;
+    border: 0;
+    border: solid #fff9f9 1px;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+.caixa-login1 input::placeholder{
+    color: white;
+    /* text-transform: uppercase; */
+    text-align: center;
+
+}
+
+.caixa-login1 #email{
+    margin-top: 55px;
+}
+
+.caixa-login1 #senha{
+    margin-top: 30px;
+}
+
+.caixa-login1 button{
+    margin: 0;
+    margin-top: 55px;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    border: 0;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid #fff9f9 1px;
+    border-radius: 8px;
+    
+}
+
+.caixa-login1 button:hover{
+    background-color: dimgray;
+    transition: 0.4;
+}
