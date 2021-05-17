@@ -6,7 +6,7 @@ body{
 }
 
 .container{
-    width: 80%; 
+    width: 80%;
     margin: auto;
 }
 
@@ -51,11 +51,11 @@ body{
 }
 
 .caixa-login1{
-    margin-top: 115px;
+    margin-top: 14.5%;
     background-color: rgba(7, 6, 6, 0.344);
     float: left;
-    margin-left: 35%;
-    width: 35%;
+    margin-left: 35px;
+    width: 29%;
     height: 360px;
     border-radius: 15px;
     /* box-shadow: 5px 7px 13px 5px purple; */
@@ -68,24 +68,24 @@ body{
     text-transform: uppercase;
 }
 
-/* .caixa-login1 p{
-    margin: 0;
-    margin-top: 25px;
-    font-weight:500;
-    color: white;
-    text-transform: uppercase;
-} */
+
 
 .caixa-login1 input{
     margin: 0;
     height: 30px;
+    width: 75%;
     background-color: transparent;
     border: 0;
     border: solid #fff9f9 1px;
     color: white;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     text-align: center;
-
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-bottom: solid white 2px;
+    outline: none;
 }
 
 .caixa-login1 input::placeholder{
@@ -107,14 +107,15 @@ body{
     margin: 0;
     margin-top: 55px;
     height: 40px;
-    width: 100px;
+    width: 150px;
     padding: 10px;
     border: 0;
     color: white;
     background-color: transparent;
     text-transform: uppercase;
     border: solid #fff9f9 1px;
-    border-radius: 8px;
+    border-radius: 5px;
+ 
     
 }
 

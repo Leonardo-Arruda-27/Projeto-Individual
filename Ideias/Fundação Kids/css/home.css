@@ -3,6 +3,8 @@ body{
     background-image: url(../img/3.png);
     background-repeat: no-repeat;
     background-size: cover;
+    
+    
 }
 
 .container{
@@ -75,4 +77,9 @@ body{
 .meio button:hover{
     background-color: transparent;
     transition: 0.4;
+}
+
+img{
+    width: 5%;
+    cursor: pointer;
 }
