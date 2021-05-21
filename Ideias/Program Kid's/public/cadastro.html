@@ -1,78 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto IoT - Sobre</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/contato-e-login.css">
 </head>
+
 <body>
-    <!--header inicio-->
-    <div class="header">
+    <div class="inicio">
+
         <div class="container">
-            <h1 class="titulo"><span class="highlight">Projeto</span> IoT Revolucionário</h1>
-            <div class="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href=""class="current">Cadastro</a></li>
-                    <li><a href="login.html">Login</a></li>
+
+            <div class="titulo">
+
+                <b id="logo"><span id="program">PROGRAM</span> <span id="K">K</span><span id="I">I</span><span
+                        id="D">D</span><span id="traco">'</span><span id="S">S</span></b>
+
+                <ul class="botoes">
+                    <li><a href="home.html"> Home</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="cadastro.html"> Cadastro</a></li>
+                    <li><a href="login.html"> Login</a></li>
                 </ul>
+
             </div>
+
         </div>
+
     </div>
-    <!--header fim-->
 
     <div class="contato">
         <div class="container">
-            <h1>Faça aqui seu cadastro!</h1>
-            <div class="formulario">
-                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-                    Nome completo
-                    <input type="text" name="nome" class="input-padrao" autofocus="autofocus" placeholder="Nome e sobrenome" required minlength="4">
-                    
-                    Data de nascimento
-                    <input type="date" name="dataNascimento" class="input-padrao" placeholder="data de nascimento" required>
-                    
-                    Nome do Responsavel
-                    <input type="text" name="nomeResponsavel" class="input-padrao" placeholder="Nome Completo do Responsavel">
+          
 
-                    Estado
-                    <input type="text" name="estado" class="input-padrao" placeholder="estado que reside" required maxlength="2">
+            <div id="caixa" class="caixinha">
+
+                <h1>faça seu cadastro</h1>
+
+                <div class="formulario" id="caixa-cadastro">
+
+                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+
+                        <span id="a" class="mini-titulo">Nome completo</span>
+                        <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                            placeholder="Nome e sobrenome" required minlength="4">
                         
-                    email
-                    <input type="text" name="email_html" class="input-padrao" placeholder="seu nome de usuário" required minlength="4">
-                    
-                    Senha
-                    <input type="password" name="senha" class="input-padrao" placeholder="***************" required minlength="4">
+                        <span id="b" class="mini-titulo">Data de nascimento</span>
+                        <input type="date" name="dataNascimento" class="input-padrao" required>
 
-                    <input type="submit" id="btn_entrar" value="Cadastrar" class="btn-green">
-                </form>
+                        <span id="c" class="mini-titulo">Nome do Responsavel</span>
+                        <input type="text" name="nomeResponsavel" class="input-padrao"
+                            placeholder="Nome Completo do Responsavel">
 
-                <img src="aguarde-orange.gif" id="img_aguarde" style="display: none; width:100px">
-    
-    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
-        Erro no cadastro
-    </div>
+                        <span id="d" class="mini-titulo">Estado</span>
+                        <input type="text" name="estado" class="input-padrao" placeholder="estado que reside" required
+                            maxlength="2">
 
+                        <span id="e" class="mini-titulo">email</span>
+                        <input type="text" name="email_html" class="input-padrao" placeholder="seu nome de usuário"
+                            required minlength="4">
+
+                        <span id="f" class="mini-titulo">Senha</span>
+                        <input type="password" name="senha" class="input-padrao" placeholder="***************" required
+                            minlength="4">
+
+                        <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
+                    </form>
+
+                    <img src="aguarde-orange.gif" id="img_aguarde" style="display: none; width:100px">
+
+                    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+
+                        Erro no cadastro
+
+                    </div>
+
+
+                </div>
+
+                <div class="imagem-lateral">
+
+                    <!-- <img src="img/side-img-contato_orange.jpg"> -->
+
+                </div>
             </div>
-            <div class="imagem-lateral">
-                <img src="img/side-img-contato_orange.jpg">
-            </div>
+
         </div>
     </div>
 
-    
 
-     <!--footer inicio-->
-    <div class="footer">
-        <div class="container">
-            <h4>Feito com carinho por um aluno BandTec. Copyright © 2021</h4>
-        </div>
-    </div>
-    <!--footer fim-->
+
+
 </body>
+
 </html>
 
 <script>
@@ -84,10 +107,10 @@
             method: "POST",
             body: formulario
         }).then(function (response) {
-            
+
             if (response.ok) {
 
-                window.location.href='login.html';
+                window.location.href = 'login.html';
 
             } else {
 
@@ -104,14 +127,14 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.display='block';
-        div_erro.style.display='none';
+        img_aguarde.style.display = 'block';
+        div_erro.style.display = 'none';
     }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        img_aguarde.style.display='none';
-        div_erro.style.display='block';
+        img_aguarde.style.display = 'none';
+        div_erro.style.display = 'block';
     }
 
 </script>

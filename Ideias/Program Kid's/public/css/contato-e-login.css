@@ -1,7 +1,7 @@
 /* PÁGINA DO CONTATO */
 
 .contato {
-    background-color: #ecf0f1;
+    /* background-color:  */
 }
 
 .contato .container {
@@ -11,10 +11,31 @@
 .contato h1 {
     padding: 40px 0;
 }
+.caixinha{
+    margin: 0;
+    margin-top: 100px;
+    background-color: rgba(7, 6, 6, 0.344);
+    height: 624px;
+    width: 590px;
+    margin-left: 12%;
+    border-radius: 15px;
+}
+
+.caixinha h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 22px;
+    color: white;
+    text-transform: uppercase;
+}
 
 .formulario {
     float: left;
+    height: 500px;
     width: 500px;
+    /* background-color:  rgba(7, 6, 6, 0.344); */
 }
 
 form label, form p{
@@ -22,18 +43,71 @@ form label, form p{
     font-size: 20px;
     margin-bottom:10px ;
 }
-
-.btn-green {
+form span{
+    /* margin-left: 193px; */
     color: white;
-    background-color: green;
-    margin: 20px 0 50px 0;
-    border: 0;
-    padding: 10px 20px;
-
-    border-radius: 5px;
-    float: left;
-    cursor: pointer;
+    text-transform: uppercase;
 }
+
+.formulario input{
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+
+.formulario input::placeholder{
+    text-align: center;
+    color: white;
+}
+
+.mini-titulo{
+    text-align: center;
+}
+#a{
+    margin-left: 223px;
+}
+
+#b{
+    margin-left: 211px;
+}
+
+#c{
+    margin-left: 210px;
+}
+
+#d{
+    margin-left: 263px;
+}
+
+#e{
+    margin-left: 269px;
+}
+
+#f{
+    margin-left: 267px;
+}
+
+.btn {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 219px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid #fff9f9 1px;
+    border-radius: 8px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: dimgray;
+    transition: 0.4;
+}
+
 
 .imagem-lateral {
     overflow: auto;
@@ -49,7 +123,7 @@ form label, form p{
     margin-bottom: 20px;
     padding: 10px 25px;
     width: 90%;
-
+    margin-left: 44px;
     border-radius: 5px;
     border: solid 1px #bbbbbb;
 }
@@ -60,34 +134,116 @@ form label, form p{
 
 /* PÁGINA DO LOGIN */
 
+body{
+    margin: 0;
+    /* background-image: url(../img/normal-pula.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+.titulo-{
+    height: 71px;
+    background-color: transparent;
+    display: block;
+    position: fixed;
+    width: 80%;
+}
+
+.titulo- b{
+    margin: 0;
+    margin-top: 23px;
+    color: white;
+    float: left;
+    font-size: 4vh;
+}
+
+#program{
+    color: rgba(255, 255, 255, 0.644);
+}
+
+#K{
+    color: rgba(255, 0, 0, 0.748);
+}
+
+#I{
+    color: rgba(255, 255, 0, 0.61);
+}
+
+#D{
+    color: rgba(0, 0, 255, 0.548);
+}
+
+#traco{
+    color: rgba(216, 112, 147, 0.76);
+}
+
+#S{
+    color: rgba(0, 128, 0, 0.733);
+}
+
+
 .pag-login {
-    background-color: #ecf0f1;
+    /* background-color: ; */
     text-align: center;
     padding: 50px 0;
 }
 
 .pag-login h1 {
+    margin: 0;
     margin-bottom: 40px;
+    text-transform: uppercase;
+    color: white;
 }
 
 .pag-login .input-padrao {
+    margin-top: 10px;
+    margin-right: 38px;
     width: 50%;
     display: inline-block;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+.pag-login .input-padrao::placeholder{
+    color: white;
+    text-align: center;
 }
 
 .box-login {
+    margin-top: 80px;
+    margin-right: 550px;
     display: inline-block;
-    background-color: white;
-    box-shadow:  3px 3px 5px 2px #ccc;
+    background-color: rgba(7, 6, 6, 0.344);
     padding: 60px 20px 0px 20px;
     border-radius: 20px;
     width: 400px;
 }
 
-.pag-login .btn-green {
-    display: block;
-    float: none;
-    margin: auto;
+.pag-login .btn {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 125px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid #fff9f9 1px;
+    border-radius: 8px;
+    color: white;
+}
+
+.pag-login .btn:hover{
+    background-color: dimgray;
+    transition: 0.4;
 }
 
 /* EXTRA */

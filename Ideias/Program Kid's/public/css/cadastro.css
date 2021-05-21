@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    background-image: url(../img/cadastro-opaco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.caixa-cadastro{
+    height: 50%;
+    background-color: black;
+}
+
+.titulo{
+    height: 71px;
+    background-color: transparent;
+    display: block;
+    position: fixed;
+    width: 80%;
+}
+
+.titulo b{
+    margin: 0;
+    margin-top: 23px;
+    color: white;
+    float: left;
+    font-size: 4vh;
+}
+
+#program{
+    color: rgba(255, 255, 255, 0.644);
+}
+
+#K{
+    color: rgba(255, 0, 0, 0.748);
+}
+
+#I{
+    color: rgba(255, 255, 0, 0.61);
+}
+
+#D{
+    color: rgba(0, 0, 255, 0.548);
+}
+
+#traco{
+    color: rgba(216, 112, 147, 0.76);
+}
+
+#S{
+    color: rgba(0, 128, 0, 0.733);
+}
+
+
+.botoes {
+    list-style: none;
+    float: right;
+
+}
+
+.botoes li a{
+    text-decoration: none;
+    color: white;
+}
+
+.botoes li {
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-left: 25px;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: solid #fff9f9 1px;
+    border-radius: 8px;
+}
+
+.botoes li:hover{
+    background-color: dimgray;
+    transition: 0.4;
+}
+
+.caixa-cadastro{
+    margin: 0;
+}
+
+.caixa-cadastro{
+    margin-top: 12.5%;
+    background-color: rgba(7, 6, 6, 0.344);
+    float: left;
+    margin-left: 35px;
+    width: 40%;
+    height: 445px;
+    border-radius: 15px;
+}
+
+.caixa-cadastro h1{
+    margin: 0;
+    margin-top: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caixa-cadastro p{
+    margin: 0;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.caixa-cadastro input{
+    margin: 0;
+    margin-top: 9px;
+    height: 30px;
+    width: 75%;
+    background-color: transparent;
+    border: 0;
+    border: solid #fff9f9 1px;
+    color: white;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-bottom: solid white 2px;
+    outline: none;
+}
+
+.caixa-cadastro input::placeholder{
+    color: white;
+    text-align: center;
+}
+
+
+.caixa-cadastro #coloca-o-nome{
+margin-top: 40px;
+}
+.caixa-cadastro #coloca-o-email{
+    margin-top: 23px;
+}
+.caixa-cadastro #coloca-a-senha{
+    margin-top: 23px;
+
+}
+.caixa-cadastro #nome{
+    margin-top: 15px;
+}
+
+
+.caixa-cadastro button{
+    margin: 0;
+    margin-top: 35px;
+    height: 40px;
+    width: 170px;
+    padding: 10px;
+    border: 0;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: solid #fff9f9 1px;
+    border-radius: 5px;
+
+}
+
+.caixa-cadastro button:hover{
+    background-color: dimgray;
+    transition: 0.4;
+}
