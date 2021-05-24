@@ -163,6 +163,10 @@ body{
     font-size: 4vh;
 }
 
+.titulo- a{
+    text-decoration: none;
+}
+
 #program{
     color: rgba(255, 255, 255, 0.644);
 }
@@ -217,7 +221,7 @@ body{
 }
 
 .box-login {
-    margin-top: 80px;
+    margin-top: 136px;
     margin-right: 550px;
     display: inline-block;
     background-color: rgba(7, 6, 6, 0.344);

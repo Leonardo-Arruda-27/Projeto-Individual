@@ -27,6 +27,10 @@ body{
     font-size: 4vh;
 }
 
+.titulo a{
+    text-decoration: none;
+}
+
 #program{
     color: rgba(255, 255, 255, 0.644);
 }
