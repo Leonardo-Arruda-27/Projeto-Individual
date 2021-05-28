@@ -134,7 +134,7 @@ img{
 
 #sobre{
     height: 100vh;
-    background-color: rgba(51, 49, 45, 0.925);
+    background-color: rgb(184, 182, 175);
 }
 
 #sobre img{
@@ -147,7 +147,24 @@ img{
 
 #cursos{
     height: 100vh;
-    background-color: dimgray;
+    background-color: rgb(184, 182, 175);
+}
+
+.titulo-curso{
+    margin: 0;
+    /* margin-top: 10%; */
+    text-align: center;
+    text-transform: uppercase;
+        font-size: 30px;
+}
+
+.barrinha-curso{
+    height: 6px;
+    width: 600px;
+    border-radius: 100px;
+    margin-top: 3%;
+    margin-left: 292px;
+    background-color: #4e0c0c;
 }
 
 .titulo-sobre{
@@ -155,10 +172,25 @@ img{
     text-transform: uppercase;
 }
 
+#u{
+    color: rgba(255, 0, 0, 0.748);
+
+}
+
+#r-{
+    color: rgba(255, 255, 0, 0.61);
+
+}
+
+#s-{
+    color: rgba(0, 0, 255, 0.548);
+
+}
+
 .texto-sobre{
     margin: 0;
     margin-top: -40%;
-    margin-left: 10%;
+    margin-left: 12%;
     text-transform: uppercase;
     font-size: 200%;
     /* color: rgba(255, 255, 255, 0.659); */
@@ -167,11 +199,11 @@ img{
 
 .barrinha   {
     height: 6px;
-    width: 418px;
+    width: 398px;
     border-radius: 100px;
     margin-top: 3%;
-    margin-right: 375px;
-    background-color: #ebdeea;
+    margin-left: 30px;
+    background-color: #4e0c0c;
 }
 
 #r{
@@ -197,11 +229,12 @@ img{
 .text-{
     margin: 0;
     margin-top: 52px;
-    color: white;
+    color: rgb(114, 56, 2);
+    font-size: 30px;
 }
 
 .caixas{
-    margin-top: 208px;
+    margin-top: 102px;
     float: left;
     margin-left: 100px;
     height: 20em;
@@ -219,8 +252,8 @@ img{
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 16px;
     overflow: hidden;
-    -webkit-box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-    box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+    -webkit-box-shadow: 15px 15px 27px #f5f5f5, -15px -15px 27px #fcfcfc;
+    box-shadow: 3px 3px 3px rgba(51, 49, 45, 0.925), 3px 3px 3px rgba(51, 49, 45, 0.925);
 }
 
 #caixa-1{
@@ -254,10 +287,13 @@ img{
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 0.5em 1em;
     text-align:center;
+    color: rgb(114, 56, 2);
 }
 
 .caixa-desc1 h2{
-    color: rgb(43, 31, 61);
+    background: linear-gradient(to right, #ff5f02 0%, #50cada, #e7ff0d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
     text-transform: uppercase;
 }
 
@@ -326,6 +362,14 @@ img{
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 0.5em 1em;
     text-align:center;
+    color: rgb(114, 56, 2);
+}
+
+.caixa-desc2 h2{
+    background: linear-gradient(to right, #ff5f02 0%, #9b5353 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    text-transform: uppercase;
 }
 
 .caixa-efeito2{
@@ -353,13 +397,13 @@ img{
 /* caixinha quando abre a foto */
 .caixas:hover .caixa-efeito2
 {
-  background-color:rgb(232, 11, 176);
+  background-color:rgb(248, 18, 1);
 }
 
 /* caixinha  pequena*/
 .caixas:hover .caixa-efeito2:hover
 {
-  background-color:rgb(211, 225, 12);
+  background-color:rgb(255, 145, 0);
   cursor:pointer;
 }
 
@@ -376,7 +420,7 @@ img{
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+    background-image:url('../img/redesss.jpg');
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -392,6 +436,14 @@ img{
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     padding: 0.5em 1em;
     text-align:center;
+    color: rgb(114, 56, 2);
+}
+
+.caixa-desc3 h2{
+    background: linear-gradient(to right, #e631e2 0%, #3603ad 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .caixa-efeito3{
@@ -419,12 +471,12 @@ img{
 /* caixinha quando abre a foto */
 .caixas:hover .caixa-efeito3
 {
-  background-color:rgb(250, 3, 3);
+  background-color:rgb(49, 32, 202);
 }
 
 /* caixinha  pequena*/
 .caixas:hover .caixa-efeito3:hover
 {
-  background-color:rgb(0, 140, 255);
+  background-color:rgb(110, 3, 160);
   cursor:pointer;
 }
