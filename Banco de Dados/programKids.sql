@@ -18,7 +18,7 @@ fkcaminhao int
  
  create table cadastro(
  id int primary key auto_increment,
- nomeCompleto varchar(50),
+ nome_c varchar(50),
  dataNascimento date,
  nomeResponsavel varchar(50),
  estado char(2),
@@ -27,3 +27,10 @@ fkcaminhao int
  );
  
  select * from cadastro;
+ 
+ create table publicacao(
+ id int primary key auto_increment,
+ descricao varchar(200),
+fkUsuario int,
+foreign key (fkUsuario) references cadastro (id)
+);
