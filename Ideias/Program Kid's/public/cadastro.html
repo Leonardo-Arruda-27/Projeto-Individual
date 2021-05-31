@@ -7,6 +7,7 @@
     <title>Projeto IoT - Sobre</title>
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/contato-e-login.css">
+    <script src="JS/validacoes.js"></script>
 </head>
 
 <body>
@@ -44,14 +45,14 @@
                     <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
 
                         <span id="a" class="mini-titulo">Nome completo</span>
-                        <input type="text" name="nome" class="input-padrao" autofocus="autofocus"
-                            placeholder="Nome e sobrenome" required minlength="4">
+                        <input onchange="validarNome()" id="idNome" type="text" name="nome" class="input-padrao" autofocus="autofocus"
+                            placeholder="Nome e sobrenome" >
                         
                         <span id="b" class="mini-titulo">Data de nascimento</span>
                         <input type="date" name="dataNascimento" class="input-padrao" required>
 
                         <span id="c" class="mini-titulo">Nome do Responsavel</span>
-                        <input type="text" name="nomeResponsavel" class="input-padrao"
+                        <input onchange="validarResponsavel()" id="idResponsavel" type="text" name="nomeResponsavel" class="input-padrao"
                             placeholder="Nome Completo do Responsavel">
 
                         <span id="d" class="mini-titulo">Estado</span>
@@ -59,12 +60,20 @@
                             maxlength="2">
 
                         <span id="e" class="mini-titulo">email</span>
-                        <input type="text" name="email_html" class="input-padrao" placeholder="seu nome de usuário"
-                            required minlength="4">
+                        <input onchange="validarEmail()" id="idEmail" type="text" name="email_html" class="input-padrao" placeholder="seu nome de usuário"
+                            required >
 
                         <span id="f" class="mini-titulo">Senha</span>
-                        <input type="password" name="senha" class="input-padrao" placeholder="***************" required
-                            minlength="4">
+                        <input onchange="validarSenha()" id="idSenha" type="password" name="senha" class="input-padrao" placeholder="***************" required
+                        minlength="3">
+
+                        <span id="g" class="mini-titulo">Selecione o curso do seu interesse</span>
+                        <select name="curso" id="select_curso" class="input-padrao">
+                            <option value="">SELECIONE O CURSO DESEJADO</option>p
+                            <option value="Html e Css">Html e Css</option>
+                            <option value="Java">Java</option>
+                            <option value="Redes">Redes</option>
+                        </select>
 
                         <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
                     </form>
