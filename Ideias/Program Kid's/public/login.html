@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto IoT - Sobre</title>
+    <title>Program Kid's - Login</title>
     <link rel="stylesheet" href="css/login .css">
     <link rel="stylesheet" href="css/contato-e-login.css">
 </head>
@@ -80,6 +80,8 @@
 
                     sessionStorage.login_usuario_meuapp = json.email_html;
                     sessionStorage.nome_usuario_meuapp = json.nome_c;
+                    sessionStorage.nome_responsavel_meuapp = json.nomeResponsavel;
+                    sessionStorage.nome_curso_meuapp = json.nomeCurso;
 
                     window.location.href = 'tempo-real.html';
                 });

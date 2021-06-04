@@ -106,7 +106,7 @@ body{
     margin-top: 454px;
     margin-left: 38px;
     border: 0px;
-    margin-right: 1075px;
+    margin-right: 1109px;
     width: auto;
     text-align: center;
     background-color: rgba(105, 105, 105, 0.7);
@@ -146,7 +146,7 @@ img{
 }
 
 #cursos{
-    height: 100vh;
+    height: 150vh;
     background-color: rgb(184, 182, 175);
 }
 
@@ -170,6 +170,11 @@ img{
 .titulo-sobre{
     margin: 0;
     text-transform: uppercase;
+}
+
+#c{
+    color: rgba(56, 53, 53, 0.644);
+ 
 }
 
 #u{
@@ -230,15 +235,15 @@ img{
     margin: 0;
     margin-top: 52px;
     color: rgb(114, 56, 2);
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .caixas{
-    margin-top: 102px;
+    margin-top: 45px;
     float: left;
     margin-left: 100px;
-    height: 20em;
-    width: 16em;
+    height: 22em;
+    width: 18em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -257,7 +262,7 @@ img{
 }
 
 #caixa-1{
-    background-color: red;
+    background-color: #FAFAFC;
 }
 
 .caixa-img1{
@@ -269,7 +274,7 @@ img{
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image:url('../img/ht3.png');
+    background-image:url('../img/html\ ee\ css.jpg');
     background-size:cover;
     background-repeat:no-repeat;
 }
@@ -278,8 +283,8 @@ img{
 
 .caixa-desc1{
     background-color: #FAFAFC;
-    height:12em;
-    width:14em;
+    height:14em;
+    width:16em;
     position:absolute;
     bottom:0em;
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -322,19 +327,19 @@ img{
 /* caixinha quando abre a foto */
 .caixas:hover .caixa-efeito1
 {
-  background-color:rgb(224, 19, 19);
+  background-color:rgb(7, 114, 255);
 }
 
 /* caixinha  pequena*/
 .caixas:hover .caixa-efeito1:hover
 {
-  background-color:yellow;
+  background-color:rgb(255, 102, 0);
   cursor:pointer;
 }
 
 
 #caixa-2{
-    background-color: hotpink;
+    background-color: #FAFAFC;;
 }
 
 .caixa-img2{
@@ -353,8 +358,8 @@ img{
 
 .caixa-desc2{
     background-color: #FAFAFC;
-    height:12em;
-    width:14em;
+    height:14em;
+    width:16em;
     position:absolute;
     bottom:0em;
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -408,27 +413,30 @@ img{
 }
 
 #caixa-3{
-    background-color: green;
+    background-color: #FAFAFC;;
 }
 
 .caixa-img3{
-    height:6em;
-    width:14em;
+    height:10em;
+    width:16em;
     padding:1em 2em;
     position:Absolute;
     top:0px;
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-    background-image:url('../img/redesss.jpg');
+    background-image:url('../img/TI--.jpg');
     background-size:cover;
     background-repeat:no-repeat;
+}
+#titulo-caixa3{
+    font-size: 22px;
 }
 
 .caixa-desc3{
     background-color: #FAFAFC;
-    height:12em;
-    width:14em;
+    height:14em;
+    width:16em;
     position:absolute;
     bottom:0em;
     -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -479,4 +487,25 @@ img{
 {
   background-color:rgb(110, 3, 160);
   cursor:pointer;
+}
+
+.texto-cursos{
+    background-color: rgb(184, 182, 175);
+    margin-top: 500px;
+    /* text-align: justify; */
+    color: rgb(114, 56, 2);
+    font-size: 28px;
+}
+
+.manolo{
+    text-align: center;
+    margin-left: 130px;
+
+}
+
+#gif-misterio{
+    width: 15%;
+    /* margin-left: 39%; */
+    margin-top: 3%;
+    cursor: pointer;
 }

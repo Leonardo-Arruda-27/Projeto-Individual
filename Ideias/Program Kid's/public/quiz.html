@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/quiz.css">
+    <title>Program Kid's - Quiz</title>
+</head>
+
+<body>
+
+    <div class="titulo-principal">
+
+        <div class="container">
+
+            <b id="logo"><a href="index.html"><span id="program">PROGRAM</span> <span id="K">K</span><span
+                        id="I">I</span><span id="D">D</span><span id="traco">'</span><span id="S">S</span></a></b>
+
+        </div>
+    </div>
+
+    <center>
+        <button class="but" id="botaozinho" onclick="tempinho()" style="display: block;">Aperte para realizar o
+            Quiz</button>
+
+        <div class="inicio" id="inicioo" style="display: none;">
+
+            <h2 class="title" id="titulo" onclick="pergunta()">descobrindo seu perfil</h2>
+
+            <div id="questoes" class="questao">you are corno?</div>
+
+            <div id="respostaA" class="resposta" onclick="respost('A')"></div>
+            <div id="respostaB" class="resposta" onclick="respost('B')"></div>
+            <div id="respostaC" class="resposta" onclick="respost('C')"></div>
+
+
+            <div class="resu" id="resultado"></div>
+            <!-- <div id="contadorTela"></div> - -->
+            <!-- <div id="maximoRespostas"></div> --> <br> <br>
+
+
+        </div>
+        <a href="quiz.html" style="text-decoration: none;"><button class="bot" id="refazer"
+                style="display: none;">Tentar Novamente</button></a>
+        <a href="index.html" style="text-decoration: none;"><button class="bot" id="pag_principal"
+                style="display: none;">Pagina
+                Inicial</button></a>
+    </center>
+
+
+
+</body>
+
+</html>
+<script>
+
+
+    var perguntas = ['Complete a frase: Eu sou bastante....', 'Dentre estas materias abaixo, qual é a sua preferida?', 'Você se considera  alguem bem analitico?', 'Voccê gosta ou sente interesse em mexer com Photoshop, ou alguma ferramenta de edição?', 'Você se considera uma pessoa focada e persistente?'];
+    var respA = ['criativo', 'Artes, Design', 'Sim', 'Amo', 'Sim'];
+    var respB = ['cuidadoso', 'Matematica, Fisica', 'Demais', 'Sim, acho legal', 'Sim, sou bastante focado(a) e bem persistente!'];
+    var respC = ['observador', 'Portugues, Historia', 'Sim, Mas nem Sempre', 'Não, sou péssimo com isso haha', 'mais ou menos'];
+
+    var respostasArmazenadas = [];
+
+    var contadorPergunta = 0;
+
+    // setTimeout(function tempinho(){
+    //     botaozinho.style.display = 'none';
+    //     inicioo.style.display = 'block';
+    // }, 3000);
+
+    function tempinho() {
+        botaozinho.style.display = 'none';
+        inicioo.style.display = 'block';
+        pergunta();
+    }
+
+    function pergunta() {
+        questoes.innerHTML = perguntas[contadorPergunta];
+        respostaA.innerHTML = respA[contadorPergunta];
+        respostaB.innerHTML = respB[contadorPergunta];
+        respostaC.innerHTML = respC[contadorPergunta];
+        // contadorTela.innerHTML = contadorPergunta;
+        // maximoRespostas.innerHTML = perguntas.length;
+    }
+
+    function respost(alternativas) {
+        respostasArmazenadas.push(alternativas);
+        contadorPergunta++;
+        if (contadorPergunta >= perguntas.length) {
+
+            return resultado_quiz();
+        }
+        pergunta()
+    }
+
+    function resultado_quiz() {
+        var contA = 0;
+        var contB = 0;
+        var contC = 0;
+
+        for (let contadorAlternativa = 0; contadorAlternativa < respostasArmazenadas.length; contadorAlternativa++) {
+            if (respostasArmazenadas[contadorAlternativa] == 'A') {
+                contA++;
+            }
+            if (respostasArmazenadas[contadorAlternativa] == 'B') {
+                contB++;
+            }
+            if (respostasArmazenadas[contadorAlternativa] == 'C') {
+                contC++;
+            }
+        }
+
+        if (contA >= 3) {
+            resultado.innerHTML = '<b style="color: blue; font-size:25px;  text-transform: uppercase;">PARABÉNS! Você tem um perfil para HTML & CSS! 🎨</b>';
+            titulo.style.display = 'none';
+            questoes.style.display = 'none';
+            respostaA.style.display = 'none';
+            respostaB.style.display = 'none';
+            respostaC.style.display = 'none';
+            refazer.style.display = 'block';
+            pag_principal.style.display = 'block';
+
+        } else if (contB >= 3) {
+            resultado.innerHTML = '<b style="color: red; font-size:25px;  text-transform: uppercase;">PARABÉNS! Você tem um perfil para JAVA! ☕</b>';
+            titulo.style.display = 'none';
+            questoes.style.display = 'none';
+            respostaA.style.display = 'none';
+            respostaB.style.display = 'none';
+            respostaC.style.display = 'none';
+            refazer.style.display = 'block';
+            pag_principal.style.display = 'block';
+
+        } else {
+            resultado.innerHTML = '<b style="color: purple; font-size:25px;  text-transform: uppercase;">PARABÉNS! Você tem um perfil para Tecnologia da Informação (TI)! 📈</b>';
+            titulo.style.display = 'none';
+            questoes.style.display = 'none';
+            respostaA.style.display = 'none';
+            respostaB.style.display = 'none';
+            respostaC.style.display = 'none';
+            refazer.style.display = 'block';
+            pag_principal.style.display = 'block';
+
+        }
+
+        // respostasArmazenadas = '';
+    }
+</script>
