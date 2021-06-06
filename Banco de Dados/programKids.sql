@@ -9,6 +9,7 @@ umidade float,
 momento datetime,
 fkcaminhao int
 );
+
  create table usuario(
  id int primary key auto_increment,
  nome varchar(50),
@@ -26,11 +27,11 @@ fkcaminhao int
  senha varchar(50)
  );
  
- select * from cadastro;
- 
- create table publicacao(
- id int primary key auto_increment,
- descricao varchar(200),
-fkUsuario int,
-foreign key (fkUsuario) references cadastro (id)
-);
+select * from cadastro;
+
+create table curso(
+idcurso int primary key auto_increment,
+fkcadastro int,
+foreign key (fkcadastro) references cadastro(id),
+nomeCurso varchar(20),
+check( nomeCurso = 'html e css' or nomeCurso = 'java' or nomeCurso = 'tecnologia da informação'));

@@ -7,6 +7,8 @@
     <title>Program Kid's - Login</title>
     <link rel="stylesheet" href="css/login .css">
     <link rel="stylesheet" href="css/contato-e-login.css">
+    <link rel="shortcut icon" href="img/snowflake.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -81,9 +83,10 @@
                     sessionStorage.login_usuario_meuapp = json.email_html;
                     sessionStorage.nome_usuario_meuapp = json.nome_c;
                     sessionStorage.nome_responsavel_meuapp = json.nomeResponsavel;
-                    sessionStorage.nome_curso_meuapp = json.nomeCurso;
+                    sessionStorage.data_nascimento_meuapp = json.dataNascimento;
+                    sessionStorage.uf_meuapp = json.estado;
 
-                    window.location.href = 'tempo-real.html';
+                    window.location.href = 'pos-login.html';
                 });
 
             } else {

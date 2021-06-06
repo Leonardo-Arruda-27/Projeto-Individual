@@ -15,10 +15,18 @@ a {
     text-decoration: none;
 }
 
+#ola1{
+    margin-top: 1%;
+}
+.nomes_banco{    
+    margin: 0;
+    margin-left: 70%;   
+    
+}
 /* CABEÇALHO */
 
 .header {
-    background-color: #232323;
+    background-color: green;
     border-right: 3px solid orangered;
     width: 20%;
     height: 100%;
@@ -79,7 +87,7 @@ a {
 
 /* FOOTER */
 
-.footer {
+/* .footer {
     background-color: rgb(255, 95, 37);
     text-align: center;
     height: 100px;
@@ -90,12 +98,12 @@ a {
     font-weight: 100;
     margin: 0;
     padding-top: 40px;
-}
+} */
 
 
 
 /* dashboard */
-
+/* 
 .dashboard {
     background-color: #ecf0f1;
     text-align: center;
@@ -127,15 +135,15 @@ a {
     display: block;
     float: none;
     margin: auto;
-}
-
+} */
+/* 
 .botoes {
     margin: auto;
     margin-bottom: 40px;
-    display: block; /* Default de botão é inline-block. Com block, margin auto funciona*/
-}
+    display: block; Default de botão é inline-block. Com block, margin auto funciona
+} */
 
-.btn {
+/* .btn {
     color: white;
     text-transform: uppercase;
     width: 180px;
@@ -145,16 +153,16 @@ a {
     padding: 0 20px;
     cursor: pointer;
     background-color: rgb(255, 164, 131);
-}
+} */
 
-.btn-now {
+/* .btn-now {
     border: 3px solid #232323;
     background-color: orangered;
-}
+} */
 
 /* EXTRA */
 
-.extra {
+/* .extra {
     margin: 10px;
 }
 
@@ -215,10 +223,10 @@ a {
 
 /* extra */
 
-.show-on-hover {
+/* .show-on-hover {
     color:#232323
 }
 
 .show-on-hover:hover {
     color:white
-}
+} */ 
