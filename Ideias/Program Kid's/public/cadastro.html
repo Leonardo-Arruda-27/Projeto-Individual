@@ -68,13 +68,13 @@
                         <input onchange="validarSenha()" id="idSenha" type="password" name="senha" class="input-padrao" placeholder="***************" required
                         minlength="3">
 
-                        <span id="g" class="mini-titulo">Selecione o curso do seu interesse</span>
+                        <!-- <span id="g" class="mini-titulo">Selecione o curso do seu interesse</span>
                         <select name="curso" id="select_curso" class="input-padrao">
                             <option value="">SELECIONE O CURSO DESEJADO</option>p
                             <option value="html_css">Html e Css</option>
                             <option value="java">Java</option>
                             <option value="ti">Tecnologia da Informação</option>
-                        </select>
+                        </select> -->
 
                         <input type="submit" id="btn_entrar" value="Cadastrar" class="btn">
                     </form>
@@ -134,13 +134,13 @@
 
     function aguardar() {
         btn_entrar.disabled = true;
-        img_aguarde.style.display = 'block';
+        // img_aguarde.style.display = 'block';
         div_erro.style.display = 'none';
     }
 
     function finalizar_aguardar() {
         btn_entrar.disabled = false;
-        img_aguarde.style.display = 'none';
+        // img_aguarde.style.display = 'none';
         div_erro.style.display = 'block';
     }
 

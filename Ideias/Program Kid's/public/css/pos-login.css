@@ -75,6 +75,10 @@ header{
     transition-property: left;
 }
 
+#primeiro_boneco{
+    margin-top: 20px;
+}
+
 .sidebar .perfil_img{
     width: 100px;
     height: 100px;
@@ -140,10 +144,11 @@ label #sidebar_btn:hover{
 
 .content{
     margin-left: 250px;
-    background: url(../img/negra-normal.png) no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+    background-color: #666560;
+    /* background: url(../img/negra-normal.png) no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    height: 300vh;
     transition: 0.5s;
 }
 
@@ -153,4 +158,115 @@ label #sidebar_btn:hover{
 
 #check{
     display: none;
+}
+
+
+
+
+.texto-aleatorio{
+    margin: 0;
+    /* text-transform: uppercase; */
+    margin-top: -1981px;
+    font-size: xxx-large;
+    margin-left: 9%;
+    font-weight: bolder;
+}
+
+.fts_curso{
+    height: 200px;
+    width: 26%;
+    border-radius: 10%;
+}
+
+#ft_curso1{
+    margin-left: 10%;
+}
+
+.botoes_pcd{
+    width: 17%;
+    height: 50px;
+    background-color: green;
+    color: white;
+    border-radius: 26px;
+    text-transform: uppercase;
+    margin-top: 5%;
+    margin-left: 9%;
+
+}
+
+.botoes_pcd:hover{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+}
+
+#titulo_pcd{
+    margin-right: 1%;
+}
+/* #titulo_pcd{
+    margin-right: 1%;
+}
+#titulo_pcd3{
+    margin-left: 1%;
+} */
+
+.caixa-meio{
+    margin: 0;
+    background-color: #e2dfab;
+    width: 67%;
+    height: 750px;
+    border-radius: 15px;
+}
+
+#titulo-meio{
+    margin: 0;
+    padding-top: 60px;
+}
+
+#img-sobre{
+    margin-top: 70px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+
+#b_usuario{
+    font-size: 10px;
+}
+
+.info{
+    font-size: 20px;
+    margin-right: 245px;
+    margin-top: 60px;
+}
+#sobre-nome{
+    margin-right: 495px;
+}
+
+#b_usuario{
+    margin: 0;
+    margin-right: 1px;
+    font-size: 16px;
+}
+
+#sobre-responsavel{
+    margin-right: 510px;
+
+}
+
+#b_responsavel{
+    margin: 0;
+    margin-top: 1px;
+}
+
+#sobre-nascimento{
+    margin-right: 570px;
+
+}
+
+#sobre-uf{
+    margin-right: -395px;
+    margin-top: -55px;
 }
