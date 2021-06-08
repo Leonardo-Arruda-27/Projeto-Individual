@@ -34,3 +34,5 @@ foreign key (idcurso) references curso (idcurso)
  fkacesso int,
  foreign key (fkacesso) references acesso (id)
  );
+ 
+ 
